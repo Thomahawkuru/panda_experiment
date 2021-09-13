@@ -1,0 +1,17 @@
+﻿<launch>
+
+	<include file="$(find rosbridge_server)/launch/rosbridge_websocket.launch">
+		<param name="port" value="9090"/>
+	</include>
+
+	<include file="$(find panda_experiment)/launch/simulation.launch">	</include>
+
+	<include file="$(find panda_experiment)/launch/cam.launch">	</include>
+
+	<include file="$(find panda_experiment)/launch/spawn_mole.launch">	</include>
+
+	<include file="$(find panda_experiment)/launch/jogging.launch">	</include>
+
+	<include file="$(find panda_experiment)/launch/tf.launch">	</include>
+	
+</launch>

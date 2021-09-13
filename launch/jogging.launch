@@ -1,0 +1,12 @@
+<launch>
+
+	<!-- run custom node for jogging -->
+    <!-- <node name="vel_to_twist" pkg="panda_experiment" type="vel_to_twist" output="screen" /> -->
+    
+	<!-- run moveit joggin control -->
+    <node name="servo_server" pkg="moveit_servo" type="servo_server" output="screen" >
+    <param name="parameter_ns" type="string" value="servo_server" />
+    <rosparam command="load" file="$(find panda_experiment)/config/panda_jogging_config.yaml" />
+    </node>
+
+</launch>

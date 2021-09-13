@@ -1,0 +1,6 @@
+<launch>
+
+	<node name="tf_publisher" pkg="panda_experiment" type="tf_publisher" output="screen" />
+
+</launch>
+

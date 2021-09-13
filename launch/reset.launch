@@ -1,0 +1,6 @@
+<launch>
+
+    <!-- run custom node for automatic intialization -->
+    <node pkg="panda_experiment" type="robot_state_reset_node" name="robot_state_reset_node" />
+
+</launch>

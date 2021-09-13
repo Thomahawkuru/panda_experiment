@@ -1,0 +1,5 @@
+<launch>
+    <param name="cam_description" command="$(find xacro)/xacro --inorder $(find panda_experiment)/cameras/cam.xacro"/>
+    <node name="spawn_object" pkg="gazebo_ros" type="spawn_model" args="-param cam_description -urdf -model cam"/>
+
+</launch>

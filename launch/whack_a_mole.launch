@@ -1,0 +1,11 @@
+<launch>
+
+<!-- 	<include file="$(find panda_experiment)/launch/reset.launch">	</include> -->	
+    <param name="mole_description" command="$(find xacro)/xacro --inorder $(find panda_experiment)/models/mole.xacro"/>
+
+    <node name="mole_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" output="screen" args="robot_description: mole_description" />
+
+    <!-- launch node -->
+    <node pkg="panda_experiment" type="whack_a_mole_node" name="whack_a_mole_node" output="screen"/>
+    
+</launch>

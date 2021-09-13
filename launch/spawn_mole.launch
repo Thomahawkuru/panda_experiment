@@ -1,0 +1,11 @@
+<launch>
+
+	<param name="mole_description" command="$(find xacro)/xacro --inorder $(find panda_experiment)/models/mole.xacro"/>
+
+    <node name="spawn_mole" pkg="gazebo_ros" type="spawn_model" args="-param mole_description -urdf -model mole"/>
+
+    <param name="base_description" command="$(find xacro)/xacro --inorder $(find panda_experiment)/models/base.xacro"/>
+
+    <node name="spawn_base" pkg="gazebo_ros" type="spawn_model" args="-param base_description -urdf -model base"/>
+    
+</launch>
