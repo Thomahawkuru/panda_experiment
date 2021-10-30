@@ -1,8 +1,10 @@
 
 # panda_experiment
 
-This package was written for ROS melodic running under Ubuntu 18.04. It is adapted from the panda_simulation project by Erdalpekel
+This package was written for ROS melodic running under Ubuntu 18.04. It is adapted from the panda_simulation project by Erdalpekel. The package runs a simulation of the Franka Emika Panda robot with a simulated task for teleoperation. The following Unity project is needed to run the teleoperation using a human operator:  
+https://github.com/Thomahawkuru/unity_experiment
 
+# How to install
 ## 1. Prerequisits
 
 Install ros_melodic_desktop_full: 
